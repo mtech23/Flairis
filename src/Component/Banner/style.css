@@ -1,0 +1,29 @@
+.bannerHeading{
+    font-family: "Cormorant Infant";
+    font-size: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #006341;
+    text-align: center;
+}
+.bannerBg{
+    background:linear-gradient(0deg, #F6F4F2, rgba(255, 255, 255, 0.792)), url("../../Assets/images/bannerBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    /* min-height: 300px; */
+    box-shadow: 0px -20px 30px -10px rgba(0, 0, 0, 0.05) inset;
+    padding: 20px 0px;
+}
+.banner-one-img {
+    text-align: center;
+    width: 134px;
+    display: block;
+    margin: 0 auto;
+}
+.banner-two-img {
+    text-align: center;
+    width: 123px;
+    display: block;
+    margin: 43px auto -55px;
+}

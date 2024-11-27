@@ -1,0 +1,49 @@
+/* card css start */
+.detail-card-wrapper {
+    padding: 0px 20px 0px 20px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #eee;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    height: 290px;
+  }
+  .detail-card-img{
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain;
+  }
+  .detail-card-title{
+    text-decoration: none;
+    color: #272727;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    font-family: "Cormorant Infant";
+    text-align: center;
+  }
+  .detail-card-title:hover{
+    color: #272727;
+  }
+  .detail-card-price{
+    color: #272727;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Karla";
+  }
+  .detail-card-wrapper:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+ 
+  @media(max-width:1180px){
+    .detail-card-title{
+      line-height: 30px;
+    }
+  }

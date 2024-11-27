@@ -1,0 +1,142 @@
+.deatil-page-bg{
+  background-color: #f9f8f4;
+}
+
+.filter-section {
+  padding: 80px 0px;
+}
+.detail-card-listing-section{
+  padding: 0px 30px 50px 30px;
+}
+
+.custom-filter-btn {
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  font-weight: 400;
+  /* margin-top: 0; */
+  margin-bottom: 10px;
+  margin-right: 15px;
+  padding: 10px 10px 10px 20px;
+  text-transform: capitalize;
+  font-family: "Cormorant Infant";
+  background: transparent;
+}
+
+.dropdown-icon {
+  color: #464646;
+  font-size: 12px;
+  padding-left: 40px;
+}
+
+.custom-filter-btn:focus-visible {
+  outline: none;
+}
+
+.custom-filter-btn:focus {
+  border: 1px solid #86caa14d !important;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3) !important;
+  /* font-size: 31.25px;
+    text-transform: capitalize;
+    font-family: "Cormorant Infant"; */
+}
+
+.filter-drop-div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-list-bg {
+  border: 1px solid #86caa14d !important;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  min-width: 293px;
+  width: 100%;
+}
+
+.drop-down-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.drop-down-list-wrapper {
+  display: grid;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  padding: 10px 9px;
+  text-align: center;
+  justify-content: center;
+}
+
+.filter-img {
+  width: 54px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.drop-item-text {
+  font-size: .8rem;
+  color: #434343;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  line-height: 27px;
+}
+
+.drop-item-text:hover {
+  color: #434343 !important;
+  text-decoration: none;
+}
+
+
+.drop-item-text:hover .drop-down-list-wrapper {
+  border: 2px solid #86caa1;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3);
+}
+
+.dropdown-list-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Libre Baskerville";
+  line-height: 2;
+  color: #434343 !important;
+}
+
+.active-list {
+  color: #86caa1 !important;
+
+}
+
+.dropdown-list-item-text:hover {
+  color: #86caa1 !important;
+}
+.left-custom-img{
+
+
+}
+
+.card-custom-img{
+  object-fit: cover;
+  width: 894px;
+  height: 604.188px;
+}
+
+@media(max-width:991px){
+  .cards-space{
+    margin-top: 25px;
+  }
+}
+
+@media (max-width:600px){
+  .card-space-one{
+    margin-top: 25px;
+  }
+}
