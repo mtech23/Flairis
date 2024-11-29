@@ -31,12 +31,19 @@ import wedrings from "../../Assets/images/wedrings.png"
 import engaRings from "../../Assets/images/engaRings.jpeg"
 import rings from "../../Assets/images/rings.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link, useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 // import { faInstagram } from '@fortawesome/free-solid-svg-icons'
 import BannerVideo from "../../Assets/images/Banner-Video.mp4";
 function Home() {
+    const setDirection = useNavigate();
+
+    const navigatePage = () => {
+      setDirection("/listing");
+    };
+
     return (
         <div>
             <UserLayout>
@@ -169,96 +176,6 @@ function Home() {
                             </div>
                             <div className="row mt-4 mt-5 p-4">
 
-                                {/* <a href="javascript:;" className="collection-card">
-                                        <div 
-                                            className="collection-card-front" 
-                                            style={{backgroundImage: `url(${braclet})`}}
-                                            >
-                                            <h2>Bracelets</h2>
-                                        </div>
-                                        <div className="collection-card-back" style={{backgroundImage: `url(${BraceletBack})`}}></div>
-                                    </a> */}
-                                {/* <div className="flip-card-div">
-                                    <div className="">
-                                        <div className="card-parent-wrapper">
-                                            <a href="#">
-                                                <div className="collection-card-outer">
-                                                    <img src={braclet} className="img-fluid front-card-img" />
-                                                    <div className="card-child-wrapper">
-                                                        <span className="collection-card-text">Bracelets</span>
-                                                    </div>
-                                                </div>
-                                                <div className="collection-card-inner ">
-                                                    <img src={BraceletBack} className="img-fluid back-card-img" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="card-parent-wrapper">
-                                            <a href="#">
-                                                <div className="collection-card-outer">
-                                                    <img src={Necklacescaled} className="img-fluid front-card-img" />
-                                                    <div className="card-child-wrapper">
-                                                        <span className="collection-card-text">Necklace</span>
-                                                    </div>
-                                                </div>
-                                                <div className="collection-card-inner ">
-                                                    <img src={necklace} className="img-fluid back-card-img" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="card-parent-wrapper">
-                                            <a href="#">
-                                                <div className="collection-card-outer">
-                                                    <img src={Earringscaled} className="img-fluid front-card-img" />
-
-                                                    <div className="card-child-wrapper">
-                                                        <span className="collection-card-text">Earrings</span>
-                                                    </div>
-                                                </div>
-                                                <div className="collection-card-inner ">
-                                                    <img src={earingsback} className="img-fluid back-card-img" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="card-parent-wrapper">
-                                            <a href="#">
-                                                <div className="collection-card-outer">
-                                                    <img src={weddingrings} className="img-fluid front-card-img" />
-
-                                                    <div className="card-child-wrapper">
-                                                        <span className="collection-card-text">Wedding Rings</span>
-                                                    </div>
-                                                </div>
-                                                <div className="collection-card-inner ">
-                                                    <img src={wedrings} className="img-fluid back-card-img" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="card-parent-wrapper">
-                                            <a href="#">
-                                                <div className="collection-card-outer">
-                                                    <img src={engaRings} className="img-fluid front-card-img" />
-
-                                                    <div className="card-child-wrapper">
-                                                        <span className="collection-card-text">Engagement Rings</span>
-                                                    </div>
-                                                </div>
-                                                <div className="collection-card-inner ">
-                                                    <img src={rings} className="img-fluid back-card-img" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> */}
-
                                 <Swiper 
                                     slidesPerView={1}
                                     spaceBetween={10}
@@ -285,7 +202,7 @@ function Home() {
                                     <SwiperSlide>
                                         <div className="">
                                             <div className="card-parent-wrapper">
-                                                <a href="#">
+                                                <a onClick={navigatePage}>
                                                     <div className="collection-card-outer">
                                                         <img src={braclet} className="img-fluid front-card-img" />
                                                         <div className="card-child-wrapper">
@@ -302,7 +219,7 @@ function Home() {
                                     <SwiperSlide>
                                         <div className="">
                                             <div className="card-parent-wrapper">
-                                                <a href="#">
+                                                <a onClick={navigatePage}>
                                                     <div className="collection-card-outer">
                                                         <img src={Necklacescaled} className="img-fluid front-card-img" />
                                                         <div className="card-child-wrapper">
@@ -319,7 +236,7 @@ function Home() {
                                     <SwiperSlide>
                                         <div className="">
                                             <div className="card-parent-wrapper">
-                                                <a href="#">
+                                                <a onClick={navigatePage}>
                                                     <div className="collection-card-outer">
                                                         <img src={Earringscaled} className="img-fluid front-card-img" />
 
@@ -337,7 +254,7 @@ function Home() {
                                     <SwiperSlide>
                                         <div className="">
                                             <div className="card-parent-wrapper">
-                                                <a href="#">
+                                                <a onClick={navigatePage}>
                                                     <div className="collection-card-outer">
                                                         <img src={weddingrings} className="img-fluid front-card-img" />
 
@@ -355,7 +272,7 @@ function Home() {
                                     <SwiperSlide>
                                         <div className="">
                                             <div className="card-parent-wrapper">
-                                                <a href="#">
+                                                <a onClick={navigatePage}>
                                                     <div className="collection-card-outer">
                                                         <img src={engaRings} className="img-fluid front-card-img" />
 

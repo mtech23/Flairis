@@ -6,7 +6,7 @@ import ProductDetail from "../Screen/ProductDetail";
 function Router () {
     return (
         <div>
-            <BrowserRouter basename="flairis">
+            <BrowserRouter basename="/flairis">
             <Routes>
                 <Route path="/" Component={Home} />
                 <Route path="/listing" Component={Listing} />
