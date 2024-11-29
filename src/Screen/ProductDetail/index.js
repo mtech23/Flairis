@@ -1,15 +1,20 @@
 import React from "react";
 import { useState } from "react";
 import UserLayout from "../../Component/UserLayout";
+import CustomSelect from "../../Component/CustomSelect";
 import Banner from "../../Component/Banner";
 import "./style.css";
 import ReactImageMagnify from 'react-image-magnify';
 import productone from "../../Assets/images/productone.png"
 import productImg from "../../Assets/images/productImg.webp"
 import bb from "../../Assets/images/bb.webp"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import icons1 from "../../Assets/images/icon1.jpg"
 
 function ProductDetail() {
     const [isHovered, setIsHovered] = useState(false); // Track if the image is hovered or touched
+    let [count, setCount] = useState(0)
 
     // Handle mouse move for desktop
     const handleMouseMove = (e) => {
@@ -30,6 +35,19 @@ function ProductDetail() {
     const handleTouchEnd = () => {
         setIsHovered(false); // Hide the zoom lens
     };
+    // const options = [
+    //     { value: 'option-1', Option: '18k' },
+    //     {value: 'option-2', Option: '14k' },
+    //     { value: 'option-3', Option: 'Platinum' },
+    //   ];
+    function incrementCount() {
+        count = count + 1;
+        setCount(count);
+    }
+    function decrementCount() {
+        count = count - 1;
+        setCount(count);
+    }
 
     return (
         <div>
@@ -99,15 +117,15 @@ function ProductDetail() {
                                         <h6 className="our-product-color">Color: <span>White</span></h6>
                                     </div>
                                     <div className="color-list-div">
-                                        <div className="color-boxes-wrapper">
+                                        <button className="color-boxes-wrapper">
                                             <div className="color-boxes"></div>
-                                        </div>
-                                        <div className="color-boxes-wrapper">
+                                        </button>
+                                        <button className="color-boxes-wrapper">
                                             <div className="color-boxes color-boxes-one"></div>
-                                        </div>
-                                        <div className="color-boxes-wrapper">
+                                        </button>
+                                        <button className="color-boxes-wrapper">
                                             <div className="color-boxes color-boxes-two"></div>
-                                        </div>
+                                        </button>
                                     </div>
                                     <div className="mt-5 mb-5">
                                         <label for="standard-select" className="standard-select-label">Metal Type</label>
@@ -116,9 +134,66 @@ function ProductDetail() {
                                                 <option value="Option 1">14k</option>
                                                 <option value="Option 2">18k</option>
                                                 <option value="Option 3">Platinum</option>
-                                              
                                             </select>
-                                            <span className="focus"></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p className="our-product-price">$3,000.00</p>
+                                    </div>
+                                    <div className="cart-btn-wrapper">
+                                        <div className="add-cart-btn-wrapper">
+                                            <button onClick={incrementCount} className="counter-btns" >+</button>
+                                            <div>{count}</div>
+                                            <button onClick={decrementCount} className="counter-btns">-</button>
+                                        </div>
+                                        <button className="add-to-cart-btn-main">
+                                            <FontAwesomeIcon icon={faCartShopping} />
+                                            &nbsp;
+                                            Add To Cart
+                                        </button>
+                                    </div>
+
+                                    <div className="mt-5">
+                                        <h5 className=""><a href="#" className="product-check-btn">Click here</a> <span className="product-name-link">to check layaway or deposits options.</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row mt-3">
+                                <div className="col-lg-12">
+                                    <h2 className="like-product-head">You May Also Like</h2>
+                                </div>
+                                <div className="row">
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 10 carat</h2>
+                                                <p className="icon-card-price">7,800.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 9 carat</h2>
+                                                <p className="icon-card-price">6,800.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 8 carat</h2>
+                                                <p className="icon-card-price">5,800.00</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

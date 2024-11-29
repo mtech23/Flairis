@@ -80,6 +80,9 @@
     border: 1px solid #a8a8a8;
     background-color: #fff;
 }
+.color-boxes-wrapper:hover{
+   transform: scale(1.1);
+}
 
 /* select box css */
 .standard-select-label{
@@ -111,4 +114,72 @@
    background-position: right 0.7rem top 50%;
    background-size: 0.65rem auto;
    border: 1px solid #000;
+}
+.our-product-price{
+    color: #b3af54;
+    font-size: 20px;
+    font-family: "Karla";
+    font-weight: 700;
+}
+
+/* select box css end */
+
+.cart-btn-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.add-cart-btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    border: solid #000;
+    border-width: 2px 1px 1px 1px;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Montserrat';
+    background-color: #fff;
+}
+.add-to-cart-btn-main{
+    padding: 18px 16px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f9f8f4;
+    background-color: #2e2d3d;
+}
+.add-to-cart-btn-main:hover{
+    opacity: 80%;
+}
+.counter-btns{
+    border: none;
+    background-color: transparent;
+}
+.product-check-btn{
+    color: #2e2d3dcc;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Libre Baskerville";
+}
+.product-check-btn:hover{
+    color: #2e2d3dcc;
+}
+.product-name-link{
+    color: #006341;
+    font-family: "Cormorant Infant", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.like-product-head{
+    font-family: "Cormorant Infant", Sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #2e2d3d;
 }

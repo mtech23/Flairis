@@ -23,7 +23,7 @@ import necklacemain from "../../Assets/images/necklace-main.jpg"
 import necklacemain2 from "../../Assets/images/necklace-main2.jpg"
 import banner2 from "../../Assets/images/banner-2.png";
 
-function Detail() {
+function Listing() {
     return (
         <div>
             <UserLayout>
@@ -518,4 +518,4 @@ function Detail() {
     )
 };
 
-export default Detail;
+export default Listing;
