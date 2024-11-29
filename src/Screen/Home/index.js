@@ -30,7 +30,10 @@ import weddingrings from "../../Assets/images/weddingrings.jpg"
 import wedrings from "../../Assets/images/wedrings.png"
 import engaRings from "../../Assets/images/engaRings.jpeg"
 import rings from "../../Assets/images/rings.png"
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 // import { faInstagram } from '@fortawesome/free-solid-svg-icons'
 import BannerVideo from "../../Assets/images/Banner-Video.mp4";
 function Home() {
@@ -270,6 +273,144 @@ function Home() {
                                 </div>
                             </div>
                             <div className="row">
+                                {/* <div className="col-lg-3 col-md-6">
+                                    <div className="icons-card">
+                                        <div>
+                                            <img src={icons1} className="img-fluid" />
+                                        </div>
+                                        <div className="product-deatil-wraper">
+                                            <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 10 carat</h2>
+                                            <p className="icon-card-price">7,800.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="icons-card">
+                                        <div>
+                                            <img src={icons1} className="img-fluid" />
+                                        </div>
+                                        <div className="product-deatil-wraper">
+                                            <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 9 carat</h2>
+                                            <p className="icon-card-price">6,800.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="icons-card">
+                                        <div>
+                                            <img src={icons1} className="img-fluid" />
+                                        </div>
+                                        <div className="product-deatil-wraper">
+                                            <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 8 carat</h2>
+                                            <p className="icon-card-price">5,800.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="icons-card">
+                                        <div>
+                                            <img src={icons1} className="img-fluid" />
+                                        </div>
+                                        <div className="product-deatil-wraper">
+                                            <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 7 carat</h2>
+                                            <p className="icon-card-price">4,800.00</p>
+                                        </div>
+                                    </div>
+                                </div> */}
+                                <Swiper className="custom-icons-slider"
+                                spaceBetween={30} 
+                                slidesPerView={1} 
+                                navigation={true} 
+                                modules={[Navigation]}
+                                breakpoints={{
+                                    // 640: {
+                                    //   slidesPerView: 2,
+                                    //   spaceBetween: 20,
+                                    // },
+                                    768: {
+                                      slidesPerView: 2,
+                                      spaceBetween: 40,
+                                    },
+                                    1024: {
+                                      slidesPerView: 3,
+                                      spaceBetween: 50,
+                                    },
+                                    1280: {
+                                      slidesPerView: 4,
+                                      spaceBetween: 50,
+                                    },
+                                  }}
+                                >
+                                    <SwiperSlide>
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 10 carat</h2>
+                                                <p className="icon-card-price">7,800.00</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 9 carat</h2>
+                                                <p className="icon-card-price">6,800.00</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 7 carat</h2>
+                                                <p className="icon-card-price">4,800.00</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 7 carat</h2>
+                                                <p className="icon-card-price">4,800.00</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="icons-card">
+                                            <div>
+                                                <img src={icons1} className="img-fluid" />
+                                            </div>
+                                            <div className="product-deatil-wraper">
+                                                <h2 className="icon-card-text">Tennis Lab-Diamond Bracelet 7 carat</h2>
+                                                <p className="icon-card-price">4,800.00</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
+                        </div>
+                    </section>
+                    {/* Flairis Icons section */}
+                    {/* <section className="mt-5">
+                        <div className="container-fluid">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <h2 className="sub-headings-daimond">
+                                        Flairis Icons
+                                    </h2>
+                                </div>
+                            </div>
+                            <div className="row">
                                 <div className="col-lg-3 col-md-6">
                                     <div className="icons-card">
                                         <div>
@@ -316,7 +457,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                     {/* Sparkling Promises section */}
                     <section className="sparkling-main-setion">
                         <div className="container-fluid">
