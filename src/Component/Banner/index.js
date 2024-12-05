@@ -8,7 +8,7 @@ import banner2 from "../../Assets/images/banner-2.png";
 function Banner(props) {
     return (
         <div>
-            <section className={`bannerBg ${props?.custombannerBg}`}>
+            <section className={`bannerBg ${props?.custombannerBg} apply-now`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
