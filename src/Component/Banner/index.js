@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import banner1 from "../../Assets/images/banner-1.png";
 import banner2 from "../../Assets/images/banner-2.png";
 
@@ -8,7 +8,7 @@ import banner2 from "../../Assets/images/banner-2.png";
 function Banner(props) {
     return (
         <div>
-            <section className={`bannerBg ${props?.custombannerBg} apply-now`}>
+            <section className={`bannerBg ${props?.custombannerBg}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -19,7 +19,6 @@ function Banner(props) {
                     </div>
                 </div>
             </section>
-
         </div>
     )
 };

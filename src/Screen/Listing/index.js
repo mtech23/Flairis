@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import UserLayout from "../../Component/UserLayout";
 import Banner from "../../Component/Banner";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +25,7 @@ import banner2 from "../../Assets/images/banner-2.png";
 
 function Listing() {
     return (
-        <div>
+        <>
             <UserLayout>
                 <Banner
                     name="Necklace"
@@ -514,7 +514,7 @@ function Listing() {
                 </div>
             </UserLayout>
 
-        </div>
+        </>
     )
 };
 

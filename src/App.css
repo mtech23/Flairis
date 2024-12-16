@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+
+
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -48,5 +52,1311 @@ html, body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* Header Css Start */
+.custom-header-bg{
+  background-color: #F6F4F2 !important;
+  padding: 12px 30px;
+}
+.header-logo-img{
+  width: 186px;
+  cursor: pointer;
+}
+.nav-menu-text{
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000 !important;
+  padding: 0px 10px 0px 10px !important;  
+}
+.nav-menu-text:hover{
+  color: #707070 !important;
+}
+.header-btn-cart-div{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 45px;
+  align-items: center;
+}
+.booking-btn{
+  font-size: 12px;
+  background-color: #634F0073;
+  font-family: "Libre Baskerville", Sans-serif;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  border-style: none;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 10px 10px 10px;
+}
+.booking-btn:hover{
+  background-color: #006341;
+}
+.cart-list-div{
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.hedaer-icons{
+  font-size: 16px;
+  color: #2e2d3dcc !important;
+  cursor: pointer;
+}
+.subcribe-input:focus-visible{
+  outline: none;
+  border-top:1px solid #006341;
+}
+
+@media (max-width:1200px){
+  .header-logo-img {
+      width: 108px ;
+  }
+  .booking-btn {
+      padding: 7px 7px 7px 7px ;
+  }
+  .nav-menu-text {
+      font-size: 12px;
+  }
+  .header-btn-cart-div {
+      gap: 15px ;
+  }
+}
+
+@media (max-width:991px){
+ 
+  .nav-menu-text {
+      padding: 10px 0px 0px 0px !important;
+  }
+
+}
+/* Header Css End */
+
+
+/* Home Page Css Start */
+@font-face {
+  font-family: 'Snell';
+  src: url('./font/SnellBT-Bold.woff2') format('woff2'),
+      url('./font/SnellBT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+.banner-video {
+  max-height: 90vh;
+  overflow: hidden;
+}
+.hero-video{
+  transform: scale(1.4);
+  width: 100%;
+}
+.banner-social-div{
+  position: absolute;
+  right: 20px;
+  bottom: 32%;
+  transform: rotate(270deg);
+}
+.banner-social-div-two{
+  position: absolute;
+  right: 20px;
+  bottom: 13%;
+  transform: rotate(270deg);
+}
+.banner-social-icons{
+  color: #fff;
+  padding-right: 4px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.banner-social-text{
+  color: #fff;
+  text-decoration: none;
+  font-family: "Libre Baskerville";
+ font-weight: 800;
+ font-size: 15px;
+}
+.banner-social-text:hover{
+  color: #fff;
+}
+.main-page-bg{
+  background-color: #F6F4F2;  
+}
+.sub-headings-daimond{
+  color: #006341;
+  font-family: "snell";
+  font-size: 85px;
+  font-weight: bold;
+  /* line-height: 345px; */
+  text-align: center;
+  position: relative;
+}
+.explore-content-wrapper{
+  position: relative;
+}
+.explore-outer-text{
+  font-size: 9em;
+  /* font-size: 8px; */
+  font-weight: 400;
+  font-family: "Sorts Mill Goudy", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.daimond-section{
+  padding: 30px 0px;
+}
+.explore-inner-text{
+  font-size: 12px ;
+  color: #051f34;
+  font-family: "Sorts Mill Goudy", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.explore-inner-wrapper{
+  position: absolute;
+  top: 37%;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+}
+.explore-content-wrapper:hover .explore-outer-text{
+color: #006341;
+transition: transform 1s ease;
+transform: translateY(-1%);
+
+}
+.explore-content-wrapper:hover .explore-inner-text{
+opacity: 50%;
+
+}
+.special-daimond-img{
+  width: 63px;
+  object-fit: cover;
+  padding-bottom: 12px;
+}
+.special-daimond-img:hover{
+  transform: scale(1.1);
+}
+.specail-daimond-wrapper{
+  text-decoration: none;
+  display: inline-grid;
+}
+.specail-daimond-text{
+  font-family: "Libre Baskerville";
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2E2D3D;
+  text-align: center;
+}
+.collection-main-head{
+  position: relative;
+}
+.ring-head{
+  position: absolute;
+  left: 41%;
+}
+.card-child-wrapper{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #00000073;
+  width: 100%;
+}
+.card-parent-wrapper{
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.card-parent-wrapper:hover .collection-card-oute{
+  opacity: 0;
+}
+.card-parent-wrapper:hover .collection-card-inner{
+  opacity: 1;
+}
+.collection-card-outer{
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.front-card-img{
+  opacity: 90%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.back-card-img{
+  height: 500px;
+  object-fit: cover; 
+  width: 100%;
+}
+.collection-card-text{
+  color: #FFFFFF;
+  font-family: "Libre Baskerville";
+  font-size: 35px;
+  font-weight: 100;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  top: 47%;
+  left: 0;
+  right: 0;
+}
+
+.collection-card-inner {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.flip-card-div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+}
+
+/* .collection-card-front {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* .collection-card-front h2{
+  color: #fff;
+}
+.collection-card {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+.collection-card-front {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection-card-front h2{
+  color: #fff;
+}
+.collection-card-back {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.collection-card:hover .collection-card-back{
+  opacity: 1;
+} */
+
+
+
+.icons-card{
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #eee;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 10px;
+}
+.icon-card-text{
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  line-height: 1.2em;
+  text-align: center;
+  font-family: "Cormorant Infant";
+  text-transform: capitalize;
+  color: #2e2d3d;
+}
+.product-deatil-wraper{
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+.icon-card-price{
+  color: #000000;
+  font-family: "Abel", Sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.sparkling-main-setion{
+  margin: 320px 0px;
+}
+.sparkling-setion{
+  background-color: #00634126;
+  background-position: 100% 100%;
+  padding: 0% 15% 0% 0%; 
+}
+.sparkling-side-img{
+  width: 50%;
+  text-align: center;
+  margin: -100px 0px -100px 0px;
+}
+.child-heading{
+  font-family: "snell";
+  font-weight: bold;
+  color: #2e2d3d;
+  text-transform: capitalize;
+  font-size: 64px;
+}
+.child-para{
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7em;
+  color: #2e2d3d;
+}
+.discover-side{
+  margin: 0px 0px 0px -75px;
+}
+.child-btns{
+  background-color: #FFFFFF;
+  fill: #000000;
+  color: #000000;
+  font-family: "Karla", Sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  transition: all .3s;
+  border: none;
+  padding: 12px 40px;
+
+}
+.child-btns:hover{
+  background-color: #006341;
+  color: #FFFFFF;
+}
+.child-btns::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20px;
+  background-color: #cb9274;
+  transition: background-color .4s ease, width .4s ease;
+  border-radius: .75px;
+  position: absolute;
+  margin-left: -5px;
+  top: calc(50% - .5px);
+  transform: translateX(-100%)
+}
+.glamour-img-side{
+  text-align: end;
+}
+.glamour-section-space{
+  padding-left: 68px;
+}
+.glamour-btn{
+  margin: 0px -73px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: end;
+}
+.gamestone-daimond-bg{
+  /* background-image: url("../../Assets/images/gamestone-bg.png"); */
+  background-image: url("./Assets/images/gamestone-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gameston-head{
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 80px;
+  letter-spacing: -4.33px;
+  text-align: left;
+}
+.gameston-para{
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 42px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.gamestone-btns{
+  background-color: #006341;
+  color: #FFFFFF;
+  fill: #000000;
+  font-family: "Karla", Sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  transition: all .3s;
+  border: none;
+  padding: 12px 40px;
+}
+
+.gamestone-btns::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20px;
+  background-color: #cb9274;
+  transition: background-color .4s ease, width .4s ease;
+  border-radius: .75px;
+  position: absolute;
+  margin-left: -5px;
+  top: calc(50% - .5px);
+  transform: translateX(-100%)
+}
+.gamestone-btns:hover{
+  transform: scale(1.1);
+}
+
+.gamestone-img-wrapper{
+  
+margin: -306px 0px -301px 0px;
+padding: 0px 0px 2px 0px;
+}
+.gamestone-img{
+  width: 576px;
+}
+.gamestone-img:hover{
+  transform: scale(1.1);
+}
+.ring-slider-section{
+  background-color: #00634126;
+  padding: 25px 0px;
+}
+.slider-img-wrapper{
+  margin: -70px 0px -70px 0px;
+}
+.slider-ring-wrapper{
+  margin: -110px 0px -40px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+.slider-ring-img{
+  width: 380px;
+  object-fit: contain;
+  object-position: center center;
+}
+.slider-ring-detail{
+  text-align: center;
+  font-family: "Sorts Mill Goudy";
+  font-size: 40px;
+  line-height: 1.5em;
+  color:  #53575f;
+}
+.slider-ring-description{
+  text-align: center;
+  font-family: "Sorts Mill Goudy";
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.4em;
+  color: #53575f;
+}
+.slider-btn-wrapper{
+text-align: center;
+}
+.slider-description-wrapper{
+  margin: 0% 0% 5% 0%;
+  padding: 0px 0px 0px 0px;
+}
+.newsletter-section{
+  background-color: #D1DFD7; 
+  padding: 80px 0px 80px 0px;  
+}
+.newsletter-head{
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 80px;
+  letter-spacing: 1.3px;
+  text-transform: capitalize;
+}
+.newsletter-para{
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-size: 17px; 
+  color: #53575f;
+  /* color: #2E2D3D; */
+}
+.subscribe-box{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subcribe-input{
+  background-color: #fff;
+  border: 1px solid #e3dbd4;
+  background-color: #fff;
+  border: 1px solid #e3dbd4;
+  padding: 6px 9px;
+  width: 76%;
+  color: #1f2124;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+.subcribe-input::placeholder{
+  color: #53575f;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+.newsletter-btn{
+  background-color: #006341;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  font-family: "Karla";
+  border: none;
+  padding: 9px 27px;
+}
+.custom-icons-slider .swiper-button-prev::after{
+  font-weight: 900 !important;
+  font-size: 22px !important;
+  padding: 12px 12px;
+  background-color: #eee;
+  color: #000;
+  opacity: 1 !important;
+  border-radius: 5px;
+}
+.custom-icons-slider .swiper-button-next::after{
+  font-weight: 900 !important;
+  font-size: 22px !important;
+  padding: 12px 12px;
+  background-color: #eee;
+  color: #000;
+  border-radius: 5px;
+}
+
+.custom-icons-slider{
+  padding: 0px 40px !important;
+}
+
+@media(max-width:1440px){
+  .banner-social-div {
+      bottom: 37%;
+  }
+}
+@media (max-width:1180px){
+  .specail-daimond-text {      
+      font-size: 14px;
+  }
+  .special-daimond-img {
+      width: 56px;
+   }
+   .child-heading {
+      font-size: 35px;
+  }
+  .sparkling-side-img {
+      width: 100%;
+   
+  }
+  .gameston-head {
+      font-size: 47px;
+      line-height: 63px;
+      text-align: left;
+  }
+  .footer-title {    
+      font-size: 53px;
+  }
+  .footer-social-icons-wrapper {
+      margin: 20px 0px;
+  }
+  .icon-card-text {
+      font-size: 19px;
+  }
+}
+
+
+@media (max-width:991px){
+  /* .discover-side {
+      margin: 118px 0px 0px 12px;
+  } */
+  .glamour-btn {
+     
+      text-align: start;
+  }
+  .sparkling-main-setion {
+      margin: 178px 0px;
+  }
+  .gamestone-img-wrapper {
+      margin: -207px 0px -184px 0px;
+      text-align: end;
+  }
+  .slider-ring-img {
+      width: 227px
+  }
+  .slider-ring-detail {
+   font-size: 28px;
+  }
+  .slider-ring-description {
+      font-size: 17px;
+  }
+  .slider-ring-wrapper {
+      margin: -100px 0px -40px 0px;
+
+  }
+  .nav-menu-text {
+      padding: 10px 0px 0px 0px !important;
+  }
+  .sparkling-side-img {
+      width: 71%;
+    
+  }
+  .newsletter-head {
+      font-size: 44px;
+
+  }
+  .slider-btn-wrapper {
+      margin-bottom: 30px;
+  }
+  .slider-img-wrapper {
+      margin: -38px 0px -70px 0px;
+  }
+
+}
+@media (max-width:600px){
+   .discover-side {
+      margin: 118px 0px 0px 12px;
+  }
+  .banner-social-div {
+      transform: none;
+  }
+  .banner-social-div-two {
+      transform: none;
+  }
+  .sub-headings-daimond {
+      font-size: 32px;
+      letter-spacing: 1.67px;
+      line-height: 55px;
+  }
+  .newsletter-para {
+      font-size: 14px;
+  }
+  .ring-head {
+      left: 33%;
+      width: 27%;
+  }
+  .sparkling-side-img {
+      margin: 6px 0px -100px 0px;
+  }
+  .gamestone-img-wrapper {
+      margin: -100px 0px -184px 0px;
+    
+  }
+  .sparkling-setion {
+      padding: 0px;
+  }
+  .sparkling-main-setion {
+      margin: 90px 0px;
+  }
+  .glamour-section-space {
+      padding-left: 30px;
+  }
+  .child-para {
+      font-size: 17px;
+
+  }
+  .gamestone-daimond-bg {
+      margin: 205px 0px;
+  }
+  .slider-ring-wrapper {
+      margin: 100px 0px -40px 0px;
+  }
+  .slider-btn-wrapper {
+      margin-bottom: 70px;
+  }
+  .slider-ring-img {
+      width: 70%;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+  }
+  .subcribe-input {
+      width: 100%;
+  }
+  .newsletter-btn {
+      width: 100%;
+  }
+ 
+  .icon-card-text {
+      font-size: 16px;
+
+  }
+  .newsletter-head {
+      line-height: 38px;
+  }
+  .special-daimond-img {
+      width: 49px;
+  }
+}
+
+/* Home Page Css End */
+
+
+/* Listing CSS Start */
+.deatil-page-bg{
+  background-color: #f9f8f4;
+}
+
+.filter-section {
+  padding: 80px 0px;
+}
+.detail-card-listing-section{
+  padding: 0px 30px 50px 30px;
+}
+
+.custom-filter-btn {
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  font-weight: 400;
+  /* margin-top: 0; */
+  margin-bottom: 10px;
+  margin-right: 15px;
+  padding: 10px 10px 10px 20px;
+  text-transform: capitalize;
+  font-family: "Cormorant Infant";
+  background: transparent;
+}
+
+.dropdown-icon {
+  color: #464646;
+  font-size: 12px;
+  padding-left: 40px;
+}
+
+.custom-filter-btn:focus-visible {
+  outline: none;
+}
+
+.custom-filter-btn:focus {
+  border: 1px solid #86caa14d !important;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3) !important;
+  /* font-size: 31.25px;
+    text-transform: capitalize;
+    font-family: "Cormorant Infant"; */
+}
+
+.filter-drop-div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-list-bg {
+  border: 1px solid #86caa14d !important;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  min-width: 293px;
+  width: 100%;
+}
+
+.drop-down-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.drop-down-list-wrapper {
+  display: grid;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  padding: 10px 9px;
+  text-align: center;
+  justify-content: center;
+}
+
+.filter-img {
+  width: 54px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.drop-item-text {
+  font-size: .8rem;
+  color: #434343;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  line-height: 27px;
+}
+
+.drop-item-text:hover {
+  color: #434343 !important;
+  text-decoration: none;
+}
+
+
+.drop-item-text:hover .drop-down-list-wrapper {
+  border: 2px solid #86caa1;
+  box-shadow: 0 0 7px 0 rgba(134, 202, 161, 0.3);
+}
+
+.dropdown-list-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Libre Baskerville";
+  line-height: 2;
+  color: #434343 !important;
+}
+
+.active-list {
+  color: #86caa1 !important;
+
+}
+
+.dropdown-list-item-text:hover {
+  color: #86caa1 !important;
+}
+.left-custom-img{
+
+
+}
+
+.card-custom-img{
+  object-fit: cover;
+  width: 894px;
+  height: 604.188px;
+}
+
+@media(max-width:991px){
+  .cards-space{
+    margin-top: 25px;
+  }
+}
+
+@media (max-width:600px){
+  .card-space-one{
+    margin-top: 25px;
+  }
+}
+/* Listing CSS End */
+
+
+
+/* Product Detail css Start */
+.products-banner{
+  padding-top: 250px;
+}
+.our-products-section{
+  padding: 50px 0px;
+}
+.our-products-img{
+/* width: 74%; */
+}
+.our-product-gallery{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin-top: 20px;
+}
+.gallery-img{
+  width: 30%;
+}
+.product-detail-btn{
+  color: #000000;
+  background-color: #2e2d3d00;
+  padding: 17px;
+  border: 1px solid #d7d7d7;
+  font-family: "Karla", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0px;
+}
+.product-detail-btn:hover{
+  color: #FFF;
+  background-color: #2e2d3dcc;
+}
+.our-product-title{
+  color: #006341;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: "Cormorant Infant";
+}
+.our-product-description{
+  color: #2e2d3dcc;
+  margin: 17px 0 20px 0;
+  font-family: "Karla";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+.our-product-color{
+  font-weight: 700;
+  text-align: left;
+  margin: 0 2px;
+  line-height: 2em;
+  font-family: "Karla" ;
+  font-size: 16px;
+  line-height: 32px;
+  color:  #2e2d3dcc;
+}
+.color-list-div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.color-boxes{
+  height: 50px;
+  width: 50px;
+  background-color: #dbdbdb;
+  border-radius: 2px;
+}
+.color-boxes-one{
+  background-color: #dfcb9d;
+}
+.color-boxes-two{
+  background-color: #e7b697;
+}
+.color-boxes-wrapper{
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid #a8a8a8;
+  background-color: #fff;
+}
+.color-boxes-wrapper:hover{
+ transform: scale(1.1);
+}
+
+/* select box css */
+.standard-select-label{
+  font-size: 23px;
+  color: #2e2d3d;
+  font-family: "Cormorant Infant";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* .custom-select-box{
+
+} */
+.custom-select-box:focus{
+  outline: 0;
+}
+
+.custom-select-box {
+  width: 100%;
+  padding: 8px 8px;
+  font-size: 16px !important ;
+  font-weight: 500 !important;
+  color: #000000;
+  line-height: 1.5;
+  font-family: "Cormorant Infant";
+ /* Arrow */
+ appearance: none;
+ background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+ background-repeat: no-repeat;
+ background-position: right 0.7rem top 50%;
+ background-size: 0.65rem auto;
+ border: 1px solid #000;
+}
+.our-product-price{
+  color: #b3af54;
+  font-size: 20px;
+  font-family: "Karla";
+  font-weight: 700;
+}
+
+/* select box css end */
+
+.cart-btn-wrapper{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.add-cart-btn-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  border: solid #000;
+  border-width: 2px 1px 1px 1px;
+  padding: 12px 16px;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'Montserrat';
+  background-color: #fff;
+}
+.add-to-cart-btn-main{
+  padding: 18px 16px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f9f8f4;
+  background-color: #2e2d3d;
+}
+.add-to-cart-btn-main:hover{
+  opacity: 80%;
+}
+.counter-btns{
+  border: none;
+  background-color: transparent;
+}
+.product-check-btn{
+  color: #2e2d3dcc;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Libre Baskerville";
+}
+.product-check-btn:hover{
+  color: #2e2d3dcc;
+}
+.product-name-link{
+  color: #006341;
+  font-family: "Cormorant Infant", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.like-product-head{
+  font-family: "Cormorant Infant", Sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #2e2d3d;
+}
+/* Product Detail css End */
+
+
+/* Banner Css Start */
+.bannerHeading{
+  font-family: "Cormorant Infant";
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #006341;
+  text-align: center;
+}
+.bannerBg{
+  background:linear-gradient(0deg, #F6F4F2, rgba(255, 255, 255, 0.792)), url("./Assets/images/bannerBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  /* min-height: 300px; */
+  box-shadow: 0px -20px 30px -10px rgba(0, 0, 0, 0.05) inset;
+  padding: 20px 0px;
+}
+.banner-one-img {
+  text-align: center;
+  width: 134px;
+  display: block;
+  margin: 0 auto;
+}
+.banner-two-img {
+  text-align: center;
+  width: 123px;
+  display: block;
+  margin: 43px auto -55px;
+}
+/* Banner Css End */
+
+/* Custom Card Css Start */
+/* card css start */
+.detail-card-wrapper {
+  padding: 0px 20px 0px 20px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #eee;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #fff;
+  height: 290px;
+}
+.detail-card-img{
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: contain;
+}
+.detail-card-title{
+  text-decoration: none;
+  color: #272727;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-family: "Cormorant Infant";
+  text-align: center;
+}
+.detail-card-title:hover{
+  color: #272727;
+}
+.detail-card-price{
+  color: #272727;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Karla";
+}
+.detail-card-wrapper:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+@media(max-width:1180px){
+  .detail-card-title{
+    line-height: 30px;
+  }
+}
+
+/* Custom Card Css End */
+
+/* Footer Css Start */
+.footer-section {
+  padding: 60px 0px 20px 0px;
+  background-color: #f6f4f2;
+}
+
+.logo-footer-wrapper {
+  text-align: center;
+}
+
+.useful-links-head {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-family: "Cormorant Infant", Sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.useful-links-para {
+  color: #2e2d3dcc;
+  font-family: "Libre Baskerville";
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 28px;
+  text-align: left;
+}
+
+.footer-title {
+  color: #00634147;
+  font-family: "snell";
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.footer-bottom-wrapper {
+  padding: 0px 120px;
+}
+
+.footer-social-icons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-social-icons {
+  font-size: 24px;
+}
+.copyright-text{
+  color: #2E3031;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Karla";
+  line-height: 25px;
+  text-align: center;
+  color: #2E3031;
+}
+.reserved-text{
+  padding-left: 5px;
+}
+
+@media (max-width:1180px){
+  .footer-bottom-wrapper {
+      padding: 19px 10px;
+  }
+  .footer-title {
+      font-size: 52px;
+  }
+  .footer-social-icons-wrapper {
+      margin: 26px 0px;
+  }
+}
+@media (max-width:600px){
+  .footer-title {
+      font-size: 34px;
+  }
+}
+/* Footer Css End */
+
+
+.custom_design-form-sec {
+  background-color: #F9F8F4;
+  padding: 100px 0;
+}
+
+.custom_designForm-rowDiv {
+  padding: 50px 50px 50px 50px;
+  background-color: #d2e8df;
+  color: #fff;
+}
+.sec_title h2 {
+  font-family: "Cormorant Infant";
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #000;
+  text-align: center;
+}
+
+
+.form-control {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+.form-control:focus{
+  box-shadow: unset;
+  border: 1px solid #000;
+}
+label.form-label {
+  font-family: "Karla";
+  font-size: 16px;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 700;
+}
+label.form-label.sub-label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .custom_designForm-rowDiv {
+      padding: 40px 30px 40px 30px;
   }
 }

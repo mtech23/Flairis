@@ -3,7 +3,7 @@ import { useState } from "react";
 import UserLayout from "../../Component/UserLayout";
 import CustomSelect from "../../Component/CustomSelect";
 import Banner from "../../Component/Banner";
-import "./style.css";
+// import "./style.css";
 import ReactImageMagnify from 'react-image-magnify';
 import productone from "../../Assets/images/productone.png"
 import productImg from "../../Assets/images/productImg.webp"
